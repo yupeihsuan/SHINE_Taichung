@@ -466,4 +466,9 @@ footer a:hover{
         height: 50px;
         gap: 0;
     }
+
+    .social-icons a img {
+        width: 20px;
+        height: 20px;
+    }
 }
