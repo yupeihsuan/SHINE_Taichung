@@ -74,21 +74,28 @@ body{
 }
 
 .intro{
-    height: 60vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-image: url(intro.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
 }
+
 .intro h2{
     margin-top: 100px;
     font-size: 40px;
-    color: #333;
+    color: #444;
 }
 
 .intro p{
     font-size: 18px;
     margin: 25px 0;
+    color: #444;
 }
 
 .service{
@@ -355,13 +362,11 @@ footer a:hover{
     transform: scale(1.1);
     opacity: 1.0;
 }
-  
-
-
 
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
+        font-size: 25px;
     }
 
     .nav-list {
@@ -405,9 +410,11 @@ footer a:hover{
     }
 
     .intro h2{
-        margin-top: 50px;
+        margin-top: 100px;
         font-size: 25px;
     }
+
+    
     .intro p{
         font-size: 16px;
     }
@@ -468,7 +475,21 @@ footer a:hover{
     }
 
     .social-icons a img {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
+    }
+
+    header {
+        height: 60px;
+        opacity: 0.9;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    header img {
+        height: 50px;
+        margin: 10px;
+        margin-left: 50px;
     }
 }
