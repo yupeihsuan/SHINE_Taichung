@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHINE</title>
+    <link rel="stylesheet" href="homePage.css">
+</head>
+   
+    <body>
+        <header>
+            <a href="homePage.html"><img src="logo.png" alt="logo"></a>
+
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+
+            <ul class="nav-list" id="nav-list">
+                <li><a href="homePage.html">首頁</a></li>
+                <li><a href="homePage.html#course_intro">課程介紹</a></li>
+                <li><a href="homePage.html#reserve_section">課程預約</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <section class="intro">
+                <h2>SHINE台中 X Hanying</h2>
+                <p>探索內心深處，平衡身心靈的綠洲</p>
+                <!-- <button class="watchMore" onclick="watchMore();">了解更多</button> -->
+            </section>
+
+            <a name="brand_section">
+            <section class="brand">
+                <div class="brand_box">
+                    <!-- <br><br>
+                    <h1>品牌願景</h1>
+                    <p>
+                        SHINE NEW LIFE 閃耀新生活是身心靈療癒產業<br>
+                        元宇宙塔羅可以是生命轉化的工具<br>
+                        結合能量水晶與自然療法，讓人們的生命充滿正能量
+                    </p>
+                    <br>-->
+                    <br><br> 
+                    <p><b>【品牌願景】</b></p>
+                    <p>
+                        SHINE NEW LIFE 閃耀新生活是身心靈療癒產業<br>
+                        元宇宙塔羅可以是生命轉化的工具<br>
+                        結合能量水晶與自然療法，讓人們的生命充滿正能量
+                    </p>
+                    <br><br>
+                </div>
+            </section>
+            </a>
+
+
+            <section class="about">
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7281.445040339847!2d120.684106!3d24.146381!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dd7a97c6801%3A0xeebebdfc55d568a9!2sSHINE%20NEW%20LINE!5e0!3m2!1szh-TW!2stw!4v1749558658373!5m2!1szh-TW!2stw" 
+                    width="50%" height="350px" style="border:0;" 
+                    allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="aboutus">
+                    <h1>SHINE台中・教室地址</h1>
+                    <p>台中市北區美德街280號</p>
+                </div>
+            </section>
+
+            <a name="course_intro">
+            <section class="classIntro-carousel">
+                <section class="classIntro"><h1>SHINE・課程介紹</h1></section>
+                <section class="service">
+                    <div>
+                        <img src="p1.jpg" alt="" onclick="toCourse(1)">
+                        <h3>塔羅課程</h3>
+                    </div>
+                    <div>
+                        <img src="p2.jpg" alt="" onclick="toCourse(2)">
+                        <h3>能量水晶</h3>
+                    </div>
+                    <div>
+                        <img src="p3.jpg" alt="" onclick="toCourse(3)">
+                        <h3>心靈課程</h3>
+                    </div>
+                    
+                </section>
+    
+                <section class="service">
+                    <div>
+                        <img src="p4.jpg" alt="" onclick="toCourse(4)">
+                        <h3>頌缽課程</h3>
+                    </div>
+                    <div>
+                        <img src="p5.jpg" alt="" onclick="toCourse(5)">
+                        <h3>靈氣課程</h3>
+                    </div>
+                    <div>
+                        <img src="p6.jpg" alt="" onclick="toCourse(6)">
+                        <h3>水晶療癒課程</h3>
+                    </div>
+            
+                </section>
+                
+            </a>
+            </section>
+
+            <a name="reserve_section">
+            <section class="reserve">
+                <div class="reserve_box">
+                    <h1>SHINE台中・課程預約</h1>
+                    <p>若對於課程有任何問題，歡迎隨時聯絡我們的客服團隊<br>我們將竭誠為您服務。</p>
+                    <button class="reserve_btn" onclick="reserve();">立即預約 →</button>
+                </div>
+            </section>
+            </a>
+
+            <div class="social-icons">
+                <a href="https://line.me/R/ti/p/@865eqoeg" target="_blank">
+                    <img src="line.png" alt="Line">
+                  </a>
+                <a href="https://www.instagram.com/hanyingyu0801/#" target="_blank">
+                  <img src="ig.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/HanyingCrystery" target="_blank">
+                  <img src="fb.png" alt="Facebook">
+                </a>
+                <a href="https://maps.app.goo.gl/BX5LSu42qGTPRwk96" target="_blank">
+                    <img src="map.png" alt="googleMap">
+                  </a>
+              </div>
+              
+
+            
+            
+        </main>
+
+        <footer>
+            <div class="footer-text">
+              <p>&copy; SHINE New Life 台中 2024–<span id="year"></span> All Rights Reserved.</p>
+              <p><a href="https://maps.app.goo.gl/BX5LSu42qGTPRwk96">地址：台中市北區美德街280號</a></p>
+            </div>
+          </footer>
+
+        <script>
+
+            document.getElementById('year').textContent = new Date().getFullYear();
+        
+            function watchMore(){
+                window.location.href ="homePage.html#brand_section"
+            }
+
+            function reserve(){
+                window.location.href = "https://line.me/R/ti/p/@865eqoeg";
+            }
+
+            function toCourse(n){
+                switch(n){
+                    case 1: window.location.href ="course1.html";break;
+                    case 2: window.location.href ="course2.html";break;
+                    case 3: window.location.href ="course3.html";break;
+                    case 4: window.location.href ="course4.html";break;
+                    case 5: window.location.href ="course5.html";break;
+                    case 6: window.location.href ="course6.html";break;
+                }
+            }
+
+            const toggle = document.getElementById("menu-toggle");
+            const navList = document.getElementById("nav-list");
+
+            toggle.addEventListener("click", () => {
+                navList.classList.toggle("active");
+            });
+
+            const track = document.querySelector('.carousel-track');
+            const items = document.querySelectorAll('.carousel-item');
+            const nextBtn = document.querySelector('.carousel-btn.next');
+            const prevBtn = document.querySelector('.carousel-btn.prev');
+
+            let currentIndex = 0;
+
+            function updateCarousel() {
+                const width = items[0].clientWidth;
+                track.style.transform = `translateX(-${width * currentIndex}px)`;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % items.length;
+                updateCarousel();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                updateCarousel();
+            });
+
+            window.addEventListener('resize', updateCarousel);
+            updateCarousel();
+        </script>
+    </body>
+</html>

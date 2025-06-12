@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHINE</title>
+    <link rel="stylesheet" href="course.css">
+</head>
+   
+    <body>
+        <header>
+            <a href="homePage.html"><img src="logo.png" alt="logo"></a>
+
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+
+            <ul class="nav-list" id="nav-list">
+                <li><a href="homePage.html">首頁</a></li>
+                <li><a href="homePage.html#course_intro">課程介紹</a></li>
+                <li><a href="homePage.html#reserve_section">課程預約</a></li>
+            </ul>
+        </header>
+
+        <main>
+            
+            <div class="course_intro">
+                <h1>生命靈數手鍊創業班</h1>
+                <img src="p5.jpg" alt="pic">
+
+                <h2>課程內容</h2>
+                <ul>
+                    <li>生命靈數簡易教學</li>
+                    <li>流年計算教學</li>
+                    <li>引導設計生命靈數手鍊兩種款式</li>
+                    <li>教導如何快速換線</li>
+                    <li>拍照技巧小眉角</li>
+                    <li>銷售技巧</li>
+                </ul>
+
+                <h2>課程適合對象</h2>
+                <!-- <p>對塔羅占卜、靈性成長或輔助諮詢有興趣者，不限經驗。</p> -->
+                <ul>
+                    <li>想創業者</li>
+                    <li>二度就業或開創副業</li>
+                    <li>對手作有興趣者</li>
+                </ul>
+
+                <h2>課程費用</h2>
+                <ul>
+                    <p>NT$5,888</p>
+                </ul>
+
+                <button class="reserve_btn" onclick="reserve();">我要預約 →</button>
+
+
+            </div>
+
+            
+
+
+            
+
+
+            <div class="social-icons">
+                <a href="https://line.me/R/ti/p/@865eqoeg" target="_blank">
+                    <img src="line.png" alt="Line">
+                  </a>
+                <a href="https://www.instagram.com/hanyingyu0801/#" target="_blank">
+                  <img src="ig.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/HanyingCrystery" target="_blank">
+                  <img src="fb.png" alt="Facebook">
+                </a>
+                <a href="https://maps.app.goo.gl/BX5LSu42qGTPRwk96" target="_blank">
+                    <img src="map.png" alt="googleMap">
+                  </a>
+            </div>
+              
+
+            
+            
+        </main>
+
+        <footer>
+            <div class="footer-text">
+              <p>&copy; SHINE New Life 台中 2024–<span id="year"></span> All Rights Reserved.</p>
+              <p><a href="https://maps.app.goo.gl/BX5LSu42qGTPRwk96">地址：台中市北區美德街280號</a></p>
+            </div>
+          </footer>
+
+        <script>
+
+            document.getElementById('year').textContent = new Date().getFullYear();
+        
+            function reserve(){
+                window.location.href = "https://line.me/R/ti/p/@865eqoeg";
+            }
+
+        </script>
+    </body>
+</html>

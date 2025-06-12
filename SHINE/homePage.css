@@ -1,0 +1,406 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #e6dedc;
+    border-bottom: solid 1px #e4dcdb;
+    width: 100%;
+    height: 80px;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 70px;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+header img:hover {
+    transform: scale(1.05) translateX(5px) translateY(-5px);
+    transition: 0.5s;
+}
+
+header a {
+    text-decoration: none;
+    color: #262220;
+}
+
+header a:hover {
+    color: #917b76;
+    text-decoration: underline;
+}
+
+header li {
+    display: inline;
+    margin: 2vw;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+header ul {
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+body{
+    background-color: #fff;
+}
+
+.intro{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(intro.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+
+.intro h2{
+    margin-top: 100px;
+    font-size: 40px;
+    color: #444;
+}
+
+.intro p{
+    font-size: 18px;
+    margin: 25px 0;
+    color: #444;
+}
+
+.service{
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 180px 10px ;
+}
+
+.service h1{
+    font-size: 30px;
+    border-bottom: solid 1px #ddd;
+    /* padding: 10px; */
+    margin-top: 20px;
+    font-weight: lighter;
+}
+.service div{
+    width: 320px;
+    text-align: center;
+}
+
+.service img{
+    width: 100%;
+    height: 330px;
+    transition: transform 0.6s ease;
+}
+
+.service img:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.service h3{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.about{
+    display: flex;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+.aboutus{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus p:hover{
+    transform: scale(1.1) translateX(0px) translateY(0px);
+    transition: 0.5s;
+}
+
+.aboutus p, .reserve_box p, .brand_box p{
+    color: #666;
+    text-align: center;
+    line-height: 2em;
+    font-size: 18px;
+}
+
+.aboutus h1, .reserve_box h1{
+    color: #9e6a74 ;
+    margin-bottom: 40px;
+    font-size: 30px;
+    border-bottom: solid #ddd 1px;
+    padding: 10px;
+}
+
+.classIntro{
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px 18px 1px ; */
+}
+
+.classIntro h1, .brand_box h1{
+    font-size: 30px;
+    color:  #5c4f51;
+    border-bottom: solid 1px #ddd;
+    padding: 10px;
+}
+
+.classIntro-carousel {
+    text-align: center;
+    margin: 2rem 0;
+    background-color: #fff;
+}
+
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.reserve{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    /* background-color: #fff; */
+}
+.reserve_box,.brand_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reserve_btn{
+    background-color: #e6dedc;          /* 柔和淡粉膚色 */
+    color: #5a4a45;                      /* 溫柔咖啡灰字體 */
+    padding: 12px 24px;
+    border: 1px solid #d2b7af;           /* 更淺一點的邊框 */
+    /* border-radius: 999px; */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.reserve_btn:hover {
+    background-color: #d2b7af;          /* hover 時稍微加深 */
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #262220;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+footer{
+    background-color: #d2b7af;
+    color: #5a4a45;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #5a4a45;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+  
+.social-icons a img {
+    opacity: 0.6;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+  
+.social-icons a img:hover {
+    transform: scale(1.1);
+    opacity: 1.0;
+}
+
+@media (max-width: 768px) {    
+    .menu-toggle {
+        display: block;
+        font-size: 25px;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px; /* 在 header 底下 */
+        right: 20px; /* 和漢堡對齊 */
+        background-color: #e6dedc;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 150px;
+        text-align: left;
+        padding: 10px 0;
+        z-index: 999;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+    
+
+    .nav-list li {
+        display: block;
+        padding: 10px 20px;
+        margin: 0;
+    }
+    
+    .nav-list li a {
+        display: block;
+        width: 100%;
+    }
+
+    header ul {
+        position: static; /* 移除原本的 absolute 避免衝突 */
+        line-height: 15px;
+        margin: 5px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .intro h2{
+        margin-top: 100px;
+        font-size: 25px;
+    }
+
+    
+    .intro p{
+        font-size: 16px;
+    }
+
+    .watchMore{
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .intro{
+        height: 35vh;
+    }
+    
+    .about{
+        display: block;
+    }
+
+    .aboutus{
+        width: auto;
+    }
+
+    .aboutus p, .reserve_box p, .brand_box p{
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .aboutus h1, .reserve_box h1, .brand_box h1{
+        font-size: 22px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+    }
+
+    .maps{
+        width: 100%;
+        height: 200px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .classIntro h1{
+        font-size: 22px;
+    }
+
+    .service{
+        flex-direction: column;
+        /* padding: 60px 0px; */
+    }
+
+    .service div{
+        display: block;
+        width: 250px;
+        text-align: center;
+    }
+
+    .service img{
+        /* display: block; */
+        width: 100%;
+        height: 260px;
+        transition: transform 0.6s ease;
+    }
+
+    .service h3{
+        font-size: 18px;
+        margin: 20px 0;
+    }
+   
+    .social-icons a img {
+        width: 25px;
+        height: 25px;
+    }
+
+    header {
+        height: 60px;
+        opacity: 0.9;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    header img {
+        height: 50px;
+        margin: 10px;
+        margin-left: 50px;
+    }
+}
