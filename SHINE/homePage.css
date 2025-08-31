@@ -277,13 +277,6 @@ footer a:hover {
     line-height: 1.6;
 }
 
-
-
-/* 響應式課程區 */
-@media (min-width: 768px) {
-    
-}
-
 @media (min-width: 1024px) {
     .course-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -364,3 +357,4 @@ footer a:hover {
 
     
 }
+
