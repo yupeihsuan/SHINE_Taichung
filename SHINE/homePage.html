@@ -11,7 +11,7 @@
         <header>
             <a href="homePage.html"><img src="logo.png" alt="logo"></a>
 
-            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <!-- <button class="menu-toggle" id="menu-toggle">☰</button> -->
 
             <ul class="nav-list" id="nav-list">
                 <li><a href="homePage.html">首頁</a></li>
@@ -30,14 +30,6 @@
             <a name="brand_section">
             <section class="brand">
                 <div class="brand_box">
-                    <!-- <br><br>
-                    <h1>品牌願景</h1>
-                    <p>
-                        SHINE NEW LIFE 閃耀新生活是身心靈療癒產業<br>
-                        元宇宙塔羅可以是生命轉化的工具<br>
-                        結合能量水晶與自然療法，讓人們的生命充滿正能量
-                    </p>
-                    <br>-->
                     <br><br> 
                     <p><b>【品牌願景】</b></p>
                     <p>
@@ -52,7 +44,7 @@
 
 
             <section class="about">
-                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7281.445040339847!2d120.684106!3d24.146381!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dd7a97c6801%3A0xeebebdfc55d568a9!2sSHINE%20NEW%20LINE!5e0!3m2!1szh-TW!2stw!4v1749558658373!5m2!1szh-TW!2stw" 
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.3792151188263!2d120.67693070000001!3d24.158430000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dccbb7c483f%3A0x2390008ff28fca5!2zU0hJTkUgTkVXIExJRkUg5Y-w5Lit576O5b635bqX!5e0!3m2!1szh-TW!2stw!4v1756627438225!5m2!1szh-TW!2stw" 
                     width="50%" height="350px" style="border:0;" 
                     allowfullscreen="" loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade">
@@ -65,40 +57,69 @@
 
             <a name="course_intro">
             <section class="classIntro-carousel">
-                <section class="classIntro"><h1>SHINE・課程介紹</h1></section>
-                <section class="service">
-                    <div>
-                        <img src="p1.jpg" alt="" onclick="toCourse(1)">
+
+                <div class="classIntro">
+                    <h1>SHINE・課程介紹</h1>
+                </div>
+
+                <div class="course-grid">
+                    <div class="course-card" onclick="toCourse(1)">
+                    <img src="p1.jpg" alt="塔羅課程">
+                    <div class="course-info">
                         <h3>塔羅課程</h3>
+                        <p>透過神秘的塔羅牌，解開生命中的迷霧</p>
+                        <!-- <p class="price">創業班 | 體驗班</p> -->
                     </div>
-                    <div>
-                        <img src="p2.jpg" alt="" onclick="toCourse(2)">
+                    </div>
+
+                    <div class="course-card" onclick="toCourse(2)">
+                    <img src="p2.jpg" alt="能量水晶">
+                    <div class="course-info">
                         <h3>能量水晶</h3>
+                        <p>淨化磁場、平衡能量場，提升心靈意識</p>
+                        <!-- <p class="price">NT$ 900</p> -->
                     </div>
-                    <div>
-                        <img src="p3.jpg" alt="" onclick="toCourse(3)">
+                    </div>
+
+                    <div class="course-card" onclick="toCourse(3)">
+                    <img src="p3.jpg" alt="心靈課程">
+                    <div class="course-info">
                         <h3>心靈課程</h3>
+                        <p>助您更深入了解自己，實現內外在的和諧</p>
+                        <!-- <p class="price">NT$ 1500</p> -->
                     </div>
-                    
-                </section>
-    
-                <section class="service">
-                    <div>
-                        <img src="p4.jpg" alt="" onclick="toCourse(4)">
+                    </div>
+
+                    <div class="course-card" onclick="toCourse(4)">
+                    <img src="p4.jpg" alt="頌缽課程">
+                    <div class="course-info">
                         <h3>頌缽課程</h3>
+                        <p>透過共鳴的力量平衡身心，讓音樂療癒你的靈魂</p>
+                        <!-- <p class="price">NT$ 2000</p> -->
                     </div>
-                    <div>
-                        <img src="p5.jpg" alt="" onclick="toCourse(5)">
+                    </div>
+
+                    <div class="course-card" onclick="toCourse(5)">
+                    <img src="p5.jpg" alt="靈氣課程">
+                    <div class="course-info">
                         <h3>靈氣課程</h3>
+                        <p>透過生命能量的流動，學習平衡和引導能量</p>
+                        <!-- <p class="price">NT$ 1800</p> -->
                     </div>
-                    <div>
-                        <img src="p6.jpg" alt="" onclick="toCourse(6)">
+                    </div>
+
+                    <div class="course-card" onclick="toCourse(6)">
+                    <img src="p6.jpg" alt="水晶療癒課程">
+                    <div class="course-info">
                         <h3>水晶療癒課程</h3>
+                        <p>了解能量特性，學習運用水晶進行療癒</p>
+                        <!-- <p class="price">NT$ 2200</p> -->
                     </div>
-            
+                    </div>
+                </div>
                 </section>
-                
-            </a>
+                </a>
+
             </section>
 
             <a name="reserve_section">
@@ -109,32 +130,28 @@
                     <button class="reserve_btn" onclick="reserve();">立即預約 →</button>
                 </div>
             </section>
-            </a>
+            </a> 
+        </main>
 
+        <footer>
             <div class="social-icons">
                 <a href="https://line.me/R/ti/p/@865eqoeg" target="_blank">
                     <img src="line.png" alt="Line">
-                  </a>
+                </a>
                 <a href="https://www.instagram.com/hanyingyu0801/#" target="_blank">
                   <img src="ig.png" alt="Instagram">
                 </a>
                 <a href="https://www.facebook.com/HanyingCrystery" target="_blank">
                   <img src="fb.png" alt="Facebook">
                 </a>
-                <a href="https://maps.app.goo.gl/BX5LSu42qGTPRwk96" target="_blank">
+                <a href="https://maps.app.goo.gl/i6UofuwRZ7inwr8A6" target="_blank">
                     <img src="map.png" alt="googleMap">
-                  </a>
-              </div>
-              
+                </a>
+            </div>
 
-            
-            
-        </main>
-
-        <footer>
             <div class="footer-text">
               <p>&copy; SHINE New Life 台中 2024–<span id="year"></span> All Rights Reserved.</p>
-              <p><a href="https://maps.app.goo.gl/BX5LSu42qGTPRwk96">地址：台中市北區美德街280號</a></p>
+              <p><a href="https://maps.app.goo.gl/i6UofuwRZ7inwr8A6">地址：台中市北區美德街280號 |</a><a href="tel:0982241014"> 電話：0982-241014</a></p>
             </div>
           </footer>
 
@@ -167,31 +184,6 @@
             toggle.addEventListener("click", () => {
                 navList.classList.toggle("active");
             });
-
-            const track = document.querySelector('.carousel-track');
-            const items = document.querySelectorAll('.carousel-item');
-            const nextBtn = document.querySelector('.carousel-btn.next');
-            const prevBtn = document.querySelector('.carousel-btn.prev');
-
-            let currentIndex = 0;
-
-            function updateCarousel() {
-                const width = items[0].clientWidth;
-                track.style.transform = `translateX(-${width * currentIndex}px)`;
-            }
-
-            nextBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % items.length;
-                updateCarousel();
-            });
-
-            prevBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + items.length) % items.length;
-                updateCarousel();
-            });
-
-            window.addEventListener('resize', updateCarousel);
-            updateCarousel();
         </script>
     </body>
 </html>

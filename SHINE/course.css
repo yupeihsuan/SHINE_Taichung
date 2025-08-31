@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Header */
 header {
     background-color: #e6dedc;
     border-bottom: solid 1px #e4dcdb;
@@ -16,14 +17,13 @@ header {
 }
 
 header img {
-    height: 70px;
-    margin: 10px;
-    margin-left: 50px;
+    margin: 10px 0 10px 50px;
+    cursor: pointer;
+    transition: transform 0.5s;
 }
 
 header img:hover {
-    transform: scale(1.05) translateX(5px) translateY(-5px);
-    transition: 0.5s;
+    transform: scale(1.05)  translateY(-2px);
 }
 
 header a {
@@ -36,18 +36,18 @@ header a:hover {
     text-decoration: underline;
 }
 
-header li {
-    display: inline;
-    margin: 2vw;
-    font-weight: bold;
-    font-size: 17px;
-}
-
 header ul {
     position: absolute;
-    right: 5vw;
+    right: 50px; /* 調整距離 logo */
     top: 0;
     line-height: 80px;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 20px; /* 間距 */
+    font-weight: bold;
+    font-size: 17px;
 }
 
 body{
@@ -74,59 +74,6 @@ body{
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: #262220;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-}
-
-footer{
-    background-color: #d2b7af;
-    color: #5a4a45;
-    padding: 15px 10px;
-    text-align: center;
-    font-size: 14px;
-}
-
-footer a{
-    text-decoration: none;
-    color: #5a4a45;
-}
-
-footer a:hover{
-    text-decoration: underline;
-}
-
-.social-icons {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 1000;
-}
-  
-.social-icons a img {
-    opacity: 0.6;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-  
-.social-icons a img:hover {
-    transform: scale(1.1);
-    opacity: 1.0;
 }
 
 .course_intro {
@@ -184,70 +131,89 @@ footer a:hover{
     margin: 30px auto 0;
 }
 
+footer {
+    background-color: #d2b7af;
+    color: #5a4a45;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #5a4a45;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    gap: 15px;
+}
+
+.social-icons a img {
+    opacity: 0.7;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.social-icons a img:hover {
+    transform: scale(1.15);
+    opacity: 1.0;
+}
+
+.footer-text p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+
+.tab-texts {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.tab-text {
+  cursor: pointer;
+  color: #555;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.tab-text.active {
+  color: #9e6a74; /* 選中顏色 */
+  border-bottom: 2px solid #9e6a74; /* 下劃線效果 */
+}
+
 
 @media (max-width: 768px) {    
-    .menu-toggle {
-        display: block;
-        font-size: 25px;
-    }
-
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 80px; /* 在 header 底下 */
-        right: 20px; /* 和漢堡對齊 */
-        background-color: #e6dedc;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        width: 150px;
-        text-align: left;
-        padding: 10px 0;
-        z-index: 999;
-    }
-
-    .nav-list.active {
-        display: flex;
-    }
     
-
-    .nav-list li {
-        display: block;
-        padding: 10px 20px;
-        margin: 0;
-    }
-    
-    .nav-list li a {
-        display: block;
-        width: 100%;
-    }
-
     header ul {
-        position: static; /* 移除原本的 absolute 避免衝突 */
-        line-height: 15px;
-        margin: 5px;
-        padding: 0;
-        text-align: left;
+        right: 20px;
+        line-height: 60px;
     }
-   
-    .social-icons a img {
-        width: 25px;
-        height: 25px;
+
+    header li {
+        font-size: 16px;
+        margin: 0 10px;
     }
 
     header {
         height: 60px;
-        opacity: 0.9;
-        position: fixed;
-        top: 0;
-        z-index: 1000;
     }
-    
+
     header img {
-        height: 50px;
-        margin: 10px;
-        margin-left: 50px;
+        height: 45px;
+        margin: 10px 0 5px 10px;
     }
 
     .course_intro {

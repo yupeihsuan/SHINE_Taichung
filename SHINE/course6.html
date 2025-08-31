@@ -11,7 +11,6 @@
         <header>
             <a href="homePage.html"><img src="logo.png" alt="logo"></a>
 
-            <button class="menu-toggle" id="menu-toggle">☰</button>
 
             <ul class="nav-list" id="nav-list">
                 <li><a href="homePage.html">首頁</a></li>
@@ -23,71 +22,98 @@
         <main>
             
             <div class="course_intro">
-                <h1>生命靈數手鍊創業班</h1>
-                <img src="p6.jpg" alt="pic">
+                
+                <div class="tab-texts">
+                <span class="tab-text active" onclick="showTab('entrepreneur', this)">創業班</span>
+                |
+                <span class="tab-text" onclick="showTab('experience', this)">體驗班</span>
+                </div>
 
-                <h2>課程內容</h2>
-                <ul>
-                    <li>生命靈數簡易教學</li>
-                    <li>流年計算教學</li>
-                    <li>引導設計生命靈數手鍊兩種款式</li>
-                    <li>教導如何快速換線</li>
-                    <li>拍照技巧小眉角</li>
-                    <li>銷售技巧</li>
-                </ul>
+                <h1>生命靈數手鍊</h1>
+                
+                <img src="p1.jpg" alt="pic">
 
-                <h2>課程適合對象</h2>
-                <!-- <p>對塔羅占卜、靈性成長或輔助諮詢有興趣者，不限經驗。</p> -->
-                <ul>
-                    <li>想創業者</li>
-                    <li>二度就業或開創副業</li>
-                    <li>對手作有興趣者</li>
-                </ul>
+                <div class="tab-content" id="entrepreneur">
+                    <h2>課程內容</h2>
+                    <ul>
+                        <li>生命靈數簡易教學</li>
+                        <li>流年計算教學</li>
+                        <li>引導設計生命靈數手鍊兩種款式</li>
+                        <li>教導如何快速換線</li>
+                        <li>拍照技巧小眉角</li>
+                        <li>銷售技巧</li>
+                    </ul>
 
-                <h2>課程費用</h2>
-                <ul>
-                    <p>NT$5,888</p>
-                </ul>
+                    <h2>課程適合對象</h2>
+                    <!-- <p>對塔羅占卜、靈性成長或輔助諮詢有興趣者，不限經驗。</p> -->
+                    <ul>
+                        <li>想創業者</li>
+                        <li>二度就業或開創副業</li>
+                        <li>對手作有興趣者</li>
+                    </ul>
+
+                    <h2>課程費用</h2>
+                    <ul>
+                        <p>NT$5,888</p>
+                    </ul>
+                </div>
+
+                <div id="experience" class="tab-content" style="display: none;">
+                    <h2>課程內容</h2>
+                    <ul>
+                        <li>生命靈數基本概念介紹</li>
+                        <li>體驗手鍊設計一款</li>
+                        <li>提供所有工具與材料</li>
+                    </ul>
+                    <h2>課程費用</h2>
+                    <p>NT$1,200</p>
+                </div>
 
                 <button class="reserve_btn" onclick="reserve();">我要預約 →</button>
 
 
             </div>
+  
+        </main>
 
-            
-
-
-            
-
-
+        <footer>
             <div class="social-icons">
                 <a href="https://line.me/R/ti/p/@865eqoeg" target="_blank">
                     <img src="line.png" alt="Line">
-                  </a>
+                </a>
                 <a href="https://www.instagram.com/hanyingyu0801/#" target="_blank">
                   <img src="ig.png" alt="Instagram">
                 </a>
                 <a href="https://www.facebook.com/HanyingCrystery" target="_blank">
                   <img src="fb.png" alt="Facebook">
                 </a>
-                <a href="https://maps.app.goo.gl/BX5LSu42qGTPRwk96" target="_blank">
+                <a href="https://maps.app.goo.gl/i6UofuwRZ7inwr8A6" target="_blank">
                     <img src="map.png" alt="googleMap">
-                  </a>
+                </a>
             </div>
-              
 
-            
-            
-        </main>
-
-        <footer>
             <div class="footer-text">
               <p>&copy; SHINE New Life 台中 2024–<span id="year"></span> All Rights Reserved.</p>
-              <p><a href="https://maps.app.goo.gl/BX5LSu42qGTPRwk96">地址：台中市北區美德街280號</a></p>
+              <p><a href="https://maps.app.goo.gl/i6UofuwRZ7inwr8A6">地址：台中市北區美德街280號 |</a><a href="tel:0982241014"> 電話：0982-241014</a></p>
             </div>
-          </footer>
+        </footer>
 
         <script>
+
+            function showTab(tabId, element) {
+                // 隱藏所有內容
+                document.querySelectorAll('.tab-content').forEach(div => div.style.display = 'none');
+
+                // 顯示指定內容
+                document.getElementById(tabId).style.display = 'block';
+
+                // 取消所有文字的 active
+                document.querySelectorAll('.tab-text').forEach(span => span.classList.remove('active'));
+
+                // 設定目前文字 active
+                element.classList.add('active');
+            }
+
 
             document.getElementById('year').textContent = new Date().getFullYear();
         
